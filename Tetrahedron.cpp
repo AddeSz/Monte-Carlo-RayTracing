@@ -36,7 +36,7 @@ ColorRGB Tetrahedron::GetColor() const {
 glm::dvec3 Tetrahedron::GetNormal() const {
 	return this->normal;
 }
-
+//NO NEED
 int Tetrahedron::GetMaterial() const {
 	return this->material;
 }
@@ -51,6 +51,7 @@ bool Tetrahedron::Intersection(Ray& _ray) {
 	for (int i = 0; i < 4; i++) {
 		if (tList[i].Intersection(_ray)) {
 			hitOne = true;
+			//Outdated. Never use this normal
 			this->normal = tList[i].GetNormal();
 		}
 	}
