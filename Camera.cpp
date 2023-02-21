@@ -180,16 +180,6 @@ void Camera::CreateImage() {
 
 	for (int i = 0; i < W; i++) {
 		for (int j = 0; j < H; j++) {
-			/*
-			double r = pixels[i][j].color.x();
-			double g = pixels[i][j].color.y();
-			double b = pixels[i][j].color.z();
-
-			ofs << unsigned char(256 * glm::clamp((float)glm::sqrt(r), 0.0f, 0.99f))
-				<< unsigned char(256 * glm::clamp((float)glm::sqrt(g), 0.0f, 0.99f))
-				<< unsigned char(256 * glm::clamp((float)glm::sqrt(b), 0.0f, 0.99f));
-			//std::cout << "(" << r << "," << g << "," << b << ")" << std::endl;
-			*/
 			//unsigned char r = static_cast<unsigned char>(glm::clamp(_pixels[i][j].color.r, 0.0f, 1.f) * 255 / 1);
 			//unsigned char g = static_cast<unsigned char>(glm::clamp(_pixels[i][j].color.g, 0.0f, 1.f) * 255 / 1);
 			//unsigned char b = static_cast<unsigned char>(glm::clamp(_pixels[i][j].color.b, 0.0f, 1.f) * 255 / 1);
